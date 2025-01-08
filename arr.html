@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[
+            {
+                firstname:"Harshini",lastname:"Muruganathan"}
+            
+        ];
+        document.write("<table border='1'>");
+        document.write("<tr><th>Firstname</th><th>Lastname</th></tr>");
+        a.forEach(row=>{
+            document.write("<tr><td>"+row.firstname+"</td><td>"+row.lastname+"</td></tr>");
+        });
+        document.write("</table>");
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            div{
+                width: 200px;
+                height: 150px;
+                padding:10px;
+                margin:285px;
+                border:10px solid blue;
+                background-color:plum;
+                float:left;
+            }
+            #submit{
+                margin:19px;
+            }
+        </style>
+    </head>
+<body>
+    <div>
+       <form>
+        UserName <input type="text"id="UserName">
+        Password <input type="password" id="Password">
+        <input type="submit" onclick="redirect()">
+       </form>
+    </div>
+   <script>
+    function redirect(){
+        const UserName=document.getElementsById("UserName");
+        const Password=document.getElementsById("Password");
+        event.preventDefault();
+         if(UserName.value&& Password.value){
+            window.location.href="D:/Mern/js.html";
+        }
+}
+   </script>
+</body>
+</html>
