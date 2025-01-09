@@ -1,0 +1,29 @@
+
+     .grid-container{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        padding:20px;
+        border:2px greenyellow solid;
+        background-color:rgb(235, 101, 101)
+
+    }
+      #grid-item{
+        padding:30px;
+        width:20px;
+        height:20px;
+        background-color:rgba(6, 10, 255, 0.658);
+        color:rgb(254, 253, 255);
+        border:2px rgb(234, 250, 5) dotted;
+        margin:10px;
+      }
+      @media screen and (min-width:1600px) and (max-width:2000px){
+       .grid-container{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        padding:20px;
+        border:2px rgb(17, 125, 248) solid;
+        background-color:rgb(57, 240, 57)
+
+    }
+}
+    
