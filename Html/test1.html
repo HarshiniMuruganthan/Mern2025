@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="table">
+    </div>
+    <script>
+        var body = document.getElementById("table");
+        var data = [
+            { Name: "name1", age: 16, cgpa: 9, dept: "cse" },
+            { Name: "name2", age: 17, cgpa: 8, dept: "cse" },
+            { Name: "name3", age: 17, cgpa: 8.5, dept: "cse" }
+        ];
+
+       //table creation
+        var table = document.createElement("table");
+        var thead = document.createElement("thead");
+        var tbody = document.createElement("tbody");
+
+       //header row creation
+        var tr = document.createElement("tr");
+        Object.keys(data[0]).forEach(key => {
+            var th = document.createElement("th");
+            th.textContent = key;
+            tr.appendChild(th);
+        });
+        var gradeHeader = document.createElement("th");
+        gradeHeader.textContent = "grade";
+        tr.appendChild(gradeHeader);
+        thead.appendChild(tr);
+        table.appendChild(thead);
+
+        
+        var grades = data.map(item => item.cgpa >= 9 ? "A" : "B");
+
+        
+        data.forEach((item, index) => {
+            var tr = document.createElement("tr");
+
+            Object.values(item).forEach(value => {
+                var td = document.createElement("td");
+                td.textContent = value;
+                tr.appendChild(td);
+            });
+
+           
+            var tdGrade = document.createElement("td");
+            tdGrade.textContent = grades[index];
+            tr.appendChild(tdGrade);
+
+            tbody.appendChild(tr);
+        });
+
+        table.appendChild(tbody);
+        body.appendChild(table);
+    </script>
+</body>
