@@ -20,11 +20,13 @@ const Navbar=()=>{
             </nav>*/}
             <nav>
                 <ol>
+                <li><Link to='/signup'className="link">Signup</Link></li>
                     <li><Link to='/'className="link">Home</Link></li>
                     <li><Link to='/about'className="link">About</Link></li>
                     <li><Link to='/gallery'className="link">Gallery</Link></li>
                     <li><Link to='/contact'className="link">Contact</Link></li>
-                    <li><Link to='/signup'className="link">Signup</Link></li>
+                    
+                    <li><Link to='/login' className="link">Login</Link></li>
                 </ol>
             </nav>
         </header>
