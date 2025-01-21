@@ -1,4 +1,4 @@
-const Gallery = (sece) => {
+ const Gallery = (sece) => {
     return (
       <div>
         <h2>Welcome to {sece.page} Page</h2>

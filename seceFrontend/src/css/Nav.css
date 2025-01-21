@@ -1,0 +1,18 @@
+ol{
+    display:flex;
+    justify-content:space-around;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    background-color:brown;
+    color:beige;
+}
+.link{
+    color:rgb(5, 52, 13);
+    text-decoration:none;
+}
+.link:hover{
+    background-color: aqua;
+    color:blueviolet;
+    border-radius: 10px;
+}
