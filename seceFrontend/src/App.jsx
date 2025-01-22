@@ -11,6 +11,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import UseState from './components/FunctionaComponents/Hooks/UseState';
 import UseEffect from './components/FunctionaComponents/Hooks/UseEffect';
 import UseEffectapi from './components/FunctionaComponents/Hooks/useEffectapi';
+import UseRefExample from './components/FunctionaComponents/Hooks/UseRef';
 
 function App() {
  
@@ -28,10 +29,13 @@ function App() {
     <Route path='/about' element={<About/>}></Route>
     <Route path='/gallery' element={<Gallery page="Gallery" img="SECE Logo"/>}></Route>
     <Route path='/contact' element={<Contact/>}></Route>
-    <Route path='/usestate' element={<UseState/>}></Route>
+   <Route path='/usestate' element={<UseState/>}></Route>
     <Route path='/useeffect' element={<UseEffect/>}></Route>
     <Route path='/useapi' element={<UseEffectapi/>}></Route>
+    <Route path='/useref' element={<UseRefExample/>}></Route>
     
+  
+   
     
     
     </Routes> </BrowserRouter>
