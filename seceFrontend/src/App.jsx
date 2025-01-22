@@ -8,7 +8,8 @@ import Contact from './components/FunctionaComponents/Contact';
 import Navbar from './components/FunctionaComponents/Navbar';
 import Login from './components/FunctionaComponents/Login';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-
+import UseState from './components/FunctionaComponents/Hooks/UseState';
+import UseEffect from './components/FunctionaComponents/Hooks/UseEffect';
 function App() {
  
 
@@ -25,6 +26,8 @@ function App() {
     <Route path='/about' element={<About/>}></Route>
     <Route path='/gallery' element={<Gallery page="Gallery" img="SECE Logo"/>}></Route>
     <Route path='/contact' element={<Contact/>}></Route>
+    <Route path='/usestate' element={<UseState/>}></Route>
+    <Route path='/useeffect' element={<UseEffect/>}></Route>
     
     
     
