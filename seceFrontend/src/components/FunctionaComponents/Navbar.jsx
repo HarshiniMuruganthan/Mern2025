@@ -38,6 +38,7 @@ const Navbar=()=>{
                             <li><Link to='usestate' classname='link'>useState</Link></li>
                            
                             <li><Link to='useeffect' classname='link'>useEffect</Link></li>
+                            <li><Link to='useapi' classname='link'>useApi</Link></li>
                         </ul>
                         )}
                     </div>

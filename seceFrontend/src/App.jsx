@@ -10,6 +10,8 @@ import Login from './components/FunctionaComponents/Login';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import UseState from './components/FunctionaComponents/Hooks/UseState';
 import UseEffect from './components/FunctionaComponents/Hooks/UseEffect';
+import UseEffectapi from './components/FunctionaComponents/Hooks/useEffectapi';
+
 function App() {
  
 
@@ -28,6 +30,7 @@ function App() {
     <Route path='/contact' element={<Contact/>}></Route>
     <Route path='/usestate' element={<UseState/>}></Route>
     <Route path='/useeffect' element={<UseEffect/>}></Route>
+    <Route path='/useapi' element={<UseEffectapi/>}></Route>
     
     
     
