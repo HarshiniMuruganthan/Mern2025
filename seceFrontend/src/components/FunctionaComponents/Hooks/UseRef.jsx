@@ -1,40 +1,20 @@
-import { useRef } from 'react';
+import { useState,useRef,useEffect}from 'react';
 
-const UseRefExample = () => {
-  const inputRef = useRef(null);
-
-  const handleFocus = () => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  };
-
-  return (
-    <div style={{ padding: '20px', textAlign: 'center' }}>
-      <h2>useRef Hook Example</h2>
-      <input
-        ref={inputRef}
-        type="text"
-        placeholder="Click the button"
-        style={{ padding: '10px', fontSize: '16px', marginBottom: '10px', width: '80%' }}
-      />
-      <br />
-      <button
-        onClick={handleFocus}
-        style={{
-          padding: '10px 20px',
-          fontSize: '16px',
-          backgroundColor: '#007BFF',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-        }}
-      >
-        Focus Input
-      </button>
+const UseRef= () => {
+  var[text,setText]=useState("");
+ var prevRender=useRef();
+  useEffect(()=>{
+prevRender.current=text
+  },[text])
+ return (
+    <div >
+      <h2> This is useRef Hook Example</h2>
+      <input type="text" value={text} onChange={(e)=>setText(e.target.value)}></input>
+      <h4>The text is {text}</h4>
+      <h5>The previous render text is{prevRender.current}</h5>
+      
     </div>
-  );
-};
+  )
+}
 
-export default UseRefExample;
+export default UseRef;

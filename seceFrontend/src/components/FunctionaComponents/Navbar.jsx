@@ -31,7 +31,7 @@ const Navbar = () => {
                                 listStyle: 'none',
                                 margin: 0,
                                 padding: '10px',
-                                backgroundColor: '#f0f0f0',
+                                backgroundColor: 'beige',
                                 boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
                                 borderRadius: '5px',
                                 zIndex: 1,
@@ -41,6 +41,8 @@ const Navbar = () => {
                                 <li><Link to='/useapi' className='link'>useApi</Link></li>
                                 <li><Link to='/useref' className='link'>useRef</Link></li>
                                 <li><Link to='/usered' className='link'>useReducer</Link></li>
+                                <li><Link to='/usememo' className='link'>useMemo</Link></li>
+                                <li><Link to='/usecallback' className='link'>useCallback</Link></li>
                             </ul>
                         )}
                     </div>
