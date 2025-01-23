@@ -1,3 +1,4 @@
+//async can work independly but await depensds of async
 /*async function asAw(){
     setTimeout(()=>{
         console.log("The timeout")
