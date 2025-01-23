@@ -8,8 +8,8 @@ const UseCallback=()=>{
         backgroundColor:dark?"black":"white",
         color:dark?"white":"black"
     }
-    var getItems=()=>{
-        return [num+1,num+2,num+3]
+    var getItems=(inc)=>{
+        return [num+inc+1,num+inc+2,num+inc+3]
     }
     return(
         <div style={styling}> <button onClick={()=>setDark(dark=>!dark)}>Change Theme</button>

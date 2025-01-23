@@ -2,10 +2,8 @@ import { useState,useMemo} from "react"
 import Home from "../Home"
 
 var slowFunction=(num)=>{
-    for(var slow=0;slow<100000;slow++)
-    {
-
-    }
+    for(var slow=0;slow<100000;slow++) {}
+    
     return num*2
 }
 

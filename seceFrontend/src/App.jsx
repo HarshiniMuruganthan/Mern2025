@@ -10,11 +10,11 @@ import Login from './components/FunctionaComponents/Login';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import UseState from './components/FunctionaComponents/Hooks/UseState';
 import UseEffect from './components/FunctionaComponents/Hooks/UseEffect';
-import UseEffectapi from './components/FunctionaComponents/Hooks/useEffectapi';
+import UseEffectapi from './components/FunctionaComponents/Hooks/UseEffectAPI';
 import UseRefExample from './components/FunctionaComponents/Hooks/UseRef';
 import UseReducer from './components/FunctionaComponents/Hooks/UseReducer';
-import UseMemo from './components/FunctionaComponents/Hooks/UseMEmo';
-import UseCallback from './components/FunctionaComponents/Hooks/USeCallback';
+import UseMemo from './components/FunctionaComponents/Hooks/UseMemo';
+import UseCallback from './components/FunctionaComponents/Hooks/UseCallback';
 
 
 
