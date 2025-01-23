@@ -12,8 +12,8 @@ import UseEffect from "./components/FunctionaComponents/Hooks/UseEffect";
 import UseEffectapi from "./components/FunctionaComponents/Hooks/UseEffectAPI";
 import UseRefExample from "./components/FunctionaComponents/Hooks/UseRef";
 import UseReducer from "./components/FunctionaComponents/Hooks/UseReducer";
-import UseMemo from "./components/FunctionaComponents/UseMemo";
-import UseCallback from "./components/FunctionaComponents/UseCallback";
+import UseMemo from "./components/FunctionaComponents/Hooks/UseMemo";
+import UseCallback from "./components/FunctionaComponents/Hooks/UseCallback";
 
 function App() {
   return (
