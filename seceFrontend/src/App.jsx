@@ -12,6 +12,8 @@ import UseState from './components/FunctionaComponents/Hooks/UseState';
 import UseEffect from './components/FunctionaComponents/Hooks/UseEffect';
 import UseEffectapi from './components/FunctionaComponents/Hooks/useEffectapi';
 import UseRefExample from './components/FunctionaComponents/Hooks/UseRef';
+import UseReducer from './components/FunctionaComponents/Hooks/UseReducer';
+
 
 function App() {
  
@@ -33,6 +35,7 @@ function App() {
     <Route path='/useeffect' element={<UseEffect/>}></Route>
     <Route path='/useapi' element={<UseEffectapi/>}></Route>
     <Route path='/useref' element={<UseRefExample/>}></Route>
+    <Route path='/usered' element={<UseReducer/>}></Route>
     
   
    
