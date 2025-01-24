@@ -15,6 +15,9 @@ import UseReducer from "./components/FunctionaComponents/Hooks/UseReducer";
 import UseMemo from "./components/FunctionaComponents/Hooks/UseMemo";
 import UseCallback from "./components/FunctionaComponents/Hooks/UseCallback";
 import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMethods";
+import UseContext from "./components/FunctionaComponents/Hooks/UseContext";
+import Memo from "./components/FunctionaComponents/Memoization/Memo";
+
 
 function App() {
   return (
@@ -38,6 +41,8 @@ function App() {
           <Route path="/usered" element={<UseReducer />}></Route>
           <Route path="/usememo" element={<UseMemo />}></Route>
           <Route path="/useCallback" element={<UseCallback />}></Route>
+          <Route path="/usecontext" element={<UseContext/>}></Route>
+          <Route path="/memo" element={<Memo/>}></Route>
 
           <Route path="/reactlm" element={<ReactLifecycleMethods/>}></Route>
         </Routes>{" "}

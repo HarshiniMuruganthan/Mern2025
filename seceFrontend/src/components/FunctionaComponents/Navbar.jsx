@@ -21,6 +21,7 @@ const Navbar = () => {
                     <li><Link to='/about' className="link">About</Link></li>
                     <li><Link to='/gallery' className="link">Gallery</Link></li>
                     <li><Link to='/contact' className="link">Contact</Link></li>
+                    <li><Link to='/memo' className="link">Memo</Link></li>
                     
                    
                     <div onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown} style={{ position: 'relative', display: 'inline-block' }}>
@@ -45,6 +46,7 @@ const Navbar = () => {
                                 <li><Link to='/usered' className='link'>useReducer</Link></li>
                                 <li><Link to='/usememo' className='link'>useMemo</Link></li>
                                 <li><Link to='/usecallback' className='link'>useCallback</Link></li>
+                                <li><Link to='/usecontext' className='link'>useContext</Link></li>
                             </ul>
                         )}
                     </div>
