@@ -17,6 +17,7 @@ import UseCallback from "./components/FunctionaComponents/Hooks/UseCallback";
 import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMethods";
 import UseContext from "./components/FunctionaComponents/Hooks/UseContext";
 import Memo from "./components/FunctionaComponents/Memoization/Memo";
+import ClassCompEG from "./components/classComponents/ClassCompEG";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/memo" element={<Memo/>}></Route>
 
           <Route path="/reactlm" element={<ReactLifecycleMethods/>}></Route>
+          <Route path="/class" element={<ClassCompEG/>}></Route>
         </Routes>{" "}
       </BrowserRouter>
     </>

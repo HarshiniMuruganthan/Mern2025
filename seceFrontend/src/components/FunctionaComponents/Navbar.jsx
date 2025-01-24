@@ -3,10 +3,14 @@ import "../../css/Nav.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const [dropdown, showDropdown] = useState(false);
+    const [mdropdown, mshowDropdown] = useState(false);
+    const [hdropdown, hshowDropdown] = useState(false);
 
-    const toggleDropdown = () => {
-        showDropdown((dropdown) => !dropdown);
+    const togglemDropdown = () => {
+        mshowDropdown((mdropdown) => !mdropdown);
+    };
+    const togglehDropdown = () => {
+        hshowDropdown((hdropdown) => !hdropdown);
     };
 
     return (
@@ -21,12 +25,13 @@ const Navbar = () => {
                     <li><Link to='/about' className="link">About</Link></li>
                     <li><Link to='/gallery' className="link">Gallery</Link></li>
                     <li><Link to='/contact' className="link">Contact</Link></li>
-                    <li><Link to='/memo' className="link">Memo</Link></li>
+                    <li><Link to='/class' className="link">ClassComp</Link></li>
+                   
                     
                    
-                    <div onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown} style={{ position: 'relative', display: 'inline-block' }}>
+                    <div onMouseEnter={togglehDropdown} onMouseLeave={togglehDropdown} style={{ position: 'relative', display: 'inline-block' }}>
                         <span>Hooks</span>
-                        {dropdown && (
+                        {hdropdown && (
                             <ul style={{
                                 position: 'absolute',
                                 top: '100%',
@@ -44,10 +49,34 @@ const Navbar = () => {
                                 <li><Link to='/useapi' className='link'>useApi</Link></li>
                                 <li><Link to='/useref' className='link'>useRef</Link></li>
                                 <li><Link to='/usered' className='link'>useReducer</Link></li>
-                                <li><Link to='/usememo' className='link'>useMemo</Link></li>
+                             
                                 <li><Link to='/usecallback' className='link'>useCallback</Link></li>
                                 <li><Link to='/usecontext' className='link'>useContext</Link></li>
                             </ul>
+                            
+                        )}
+                    </div>
+                    <div onMouseEnter={togglemDropdown} onMouseLeave={togglemDropdown} style={{ position: 'relative', display: 'inline-block' }}>
+                        <span>Memo</span>
+                        {mdropdown && (
+                            <ul style={{
+                                position: 'absolute',
+                                top: '100%',
+                                left: 0,
+                                listStyle: 'none',
+                                margin: 0,
+                                padding: '10px',
+                                backgroundColor: 'beige',
+                                boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+                                borderRadius: '5px',
+                                zIndex: 1,
+                            }}>
+                                      
+                                <li><Link to='/updatenumber' className='link'>updatenumber</Link></li>
+                                <li><Link to='/updatetext' className='link'>updatetext</Link></li>
+                                
+                            </ul>
+                            
                         )}
                     </div>
                 </ol>

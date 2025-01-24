@@ -13,16 +13,19 @@ class ReactLifecycleMethods extends React.Component{
     componentDidMount(){
         console.log("Mounting comp")
         this.setState({number:this.state.number+1})
-        console.log("Component Mounded");
+        console.log("Component Mounded"); 
     }
     componentDidUpdate(prevProps,prevState){
         if(prevState.number!==this.state.number){
             console.log("Update Comp",prevState.number,this.state.number)
         }
+        setInterval(()=>{
+            console.log("Updated")
+        },5000)
        }
     componentWillUnmount(){
         console.log("component Unmounted")
-        this.setState({number:100000})
+        this.setState({number:10000})
 
        }
 
