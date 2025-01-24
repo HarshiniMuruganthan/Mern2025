@@ -15,6 +15,8 @@ const Navbar = () => {
                 <ol>
                     <li><Link to='/signup' className="link">Signup</Link></li>
                     <li><Link to='/login' className="link">Login</Link></li>
+                    <li><Link to='/reactlm' className="link">ReactLifeCycle</Link></li>
+
                     <li><Link to='/' className="link">Home</Link></li>
                     <li><Link to='/about' className="link">About</Link></li>
                     <li><Link to='/gallery' className="link">Gallery</Link></li>
