@@ -26,7 +26,7 @@ const Navbar = () => {
                     <li><Link to='/gallery' className="link">Gallery</Link></li>
                     <li><Link to='/contact' className="link">Contact</Link></li>
                     <li><Link to='/class' className="link">ClassComp</Link></li>
-                   
+                    
                     
                    
                     <div onMouseEnter={togglehDropdown} onMouseLeave={togglehDropdown} style={{ position: 'relative', display: 'inline-block' }}>
@@ -49,9 +49,13 @@ const Navbar = () => {
                                 <li><Link to='/useapi' className='link'>useApi</Link></li>
                                 <li><Link to='/useref' className='link'>useRef</Link></li>
                                 <li><Link to='/usered' className='link'>useReducer</Link></li>
+                                <li><Link to='/darktoggle' className='link'>DarkToggle</Link></li>
                              
                                 <li><Link to='/usecallback' className='link'>useCallback</Link></li>
                                 <li><Link to='/usecontext' className='link'>useContext</Link></li>
+                                <li><Link to='/custom-hooks' className='link'>CustomHooks</Link></li>
+                                <li><Link to='/localStorage' className='link'>LocalStorage</Link></li>
+                                <li><Link to='/lazyloading' className='link'>LazyLoading</Link></li>
                             </ul>
                             
                         )}

@@ -18,6 +18,11 @@ import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMe
 import UseContext from "./components/FunctionaComponents/Hooks/UseContext";
 import Memo from "./components/FunctionaComponents/Memoization/Memo";
 import ClassCompEG from "./components/classComponents/ClassCompEG";
+//import HoC from "./components/FunctionaComponents/HOC/HoC";
+import SampleCustomHooks from "./components/FunctionaComponents/Hooks/CustomHooks/SampleCustomHooks";
+import UseLocalStorage from "./components/FunctionaComponents/Hooks/CustomHooks/SampleCustomHooks";
+import LazyLoadingWithSuspense from "./components/FunctionaComponents/Memoization/LazyLoadingWithSuspense";
+import DarkToggle from "./components/FunctionaComponents/Hooks/CustomHooks/DarkToggle";
 
 
 function App() {
@@ -44,6 +49,13 @@ function App() {
           <Route path="/useCallback" element={<UseCallback />}></Route>
           <Route path="/usecontext" element={<UseContext/>}></Route>
           <Route path="/memo" element={<Memo/>}></Route>
+          <Route path="/lazyloading" element={<LazyLoadingWithSuspense/>}></Route>
+
+          
+          <Route path="/custom-hooks" element={<SampleCustomHooks/>}></Route>
+          <Route path="/localStorage" element={<UseLocalStorage/>}></Route>
+          <Route path="/darktoggle" element={<DarkToggle/>}></Route>
+           
 
           <Route path="/reactlm" element={<ReactLifecycleMethods/>}></Route>
           <Route path="/class" element={<ClassCompEG/>}></Route>
@@ -52,4 +64,5 @@ function App() {
     </>
   );
 }
+
 export default App;
