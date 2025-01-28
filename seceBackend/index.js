@@ -88,6 +88,13 @@ app.put('/updateuser', async (req, res) => {
       res.status(500).send("Error updating user details");
     }
   });
+
+   //Updation using username
+/*app.post('/updatedet',(req,res)=>{
+  var updateRec=Signup.findOneAndUpdate({"username":"harsh7"},{$set:{username:"harsh07"}});
+  res.json("Record Updated")
+  console.log(updateRec)
+});*/
   
   
   // Delete User Route
